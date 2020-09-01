@@ -20,3 +20,4 @@ driver.title
 driver.find_element_by_class_name("kix-page-column").click()
 driver.get_screenshot_as_file("/Users/priyamvadaanand/PycharmProjects/google_selenium/screenshots/img4.png")
 driver.quit()
+print("anand")
