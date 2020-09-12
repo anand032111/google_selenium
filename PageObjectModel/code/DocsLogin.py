@@ -25,15 +25,25 @@ class GoogleDocs(unittest.TestCase):
 
         login = LoginPage(driver)
         login.enter_username("testuser30071")
+        driver.get_screenshot_as_file("/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/screenshots/image1.png")
         login.click_on_next_button()
         login.enter_password("Test@3007")
+        driver.get_screenshot_as_file("/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/screenshots/image2.png")
         login.click_on_pwd_next_button()
 
         doc = GoogleDocsPage(driver)
         doc.click_navigation_icon()
+        driver.get_screenshot_as_file(
+            "/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/screenshots/image3.png")
         doc.click_doc_icon()
+        driver.get_screenshot_as_file(
+            "/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/screenshots/image4.png")
         doc.click_plus_icon()
+        driver.get_screenshot_as_file(
+            "/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/screenshots/image5.png")
         doc.click_on_doc_page()
+        driver.get_screenshot_as_file(
+            "/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/screenshots/image6.png")
 
         driver.implicitly_wait(10)
 
