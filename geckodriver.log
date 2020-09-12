@@ -1,0 +1,6 @@
+1599042159680	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/md/6ptnpfvx3073jqq527hlbp6m0000gn/T/rust_mozprofilemj1zJg"
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1599042171402	Marionette	INFO	Listening on port 51452
+[GFX1-]: [OPENGL] Failed to init compositor with reason: FEATURE_FAILURE_OPENGL_CREATE_CONTEXT
+1599123697937	Marionette	INFO	Stopped listening on port 51452
