@@ -4,6 +4,8 @@ import HtmlTestRunner
 
 
 class GoogleDocs(unittest.TestCase):
+    driver = None
+
     @classmethod
     def setUpClass(cls):
         cls.driver = webdriver.Chrome()
@@ -45,10 +47,9 @@ class GoogleDocs(unittest.TestCase):
             "div.docs-homescreen-templates-templateview.docs-homescreen-templates-templateview-showcase:nth-child(1) "
             "div.docs-homescreen-templates-templateview-preview.docs-homescreen-templates-templateview-preview"
             "-showcase > img:nth-child(1)").click()
-        self.driver.get_screenshot_as_file(
-            "/Users/priyamvadaanand/PycharmProjects/google_selenium/screenshots/img5.png")
-        self.driver.title
+        self.driver.get_screenshot_as_file("/Users/priyamvadaanand/PycharmProjects/google_selenium/screenshots/img5.png")
         self.driver.find_element_by_class_name("kix-page-column").click()
+        self.driver.implicitly_wait(10)
         self.driver.get_screenshot_as_file(
             "/Users/priyamvadaanand/PycharmProjects/google_selenium/screenshots/img6.png")
 
