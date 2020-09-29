@@ -14,15 +14,12 @@ class GoogleDocs(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = webdriver.Chrome()
-        # executable_path='/Users/priyamvadaanand/PycharmProjects/google_selenium/driver/chromedriver'
-        # cls.driver = webdriver.Firefox()
         cls.driver.maximize_window()
         cls.driver.implicitly_wait(5)
 
     def test_Login_To_Google_Doc(self):
         driver = self.driver
         driver.get("https://docs.google.com")
-
         login = LoginPage(driver)
         login.enter_username("testuser30071")
         driver.get_screenshot_as_file("/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/screenshots/image1.png")
@@ -30,7 +27,6 @@ class GoogleDocs(unittest.TestCase):
         login.enter_password("Test@3007")
         driver.get_screenshot_as_file("/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/screenshots/image2.png")
         login.click_on_pwd_next_button()
-
         doc = GoogleDocsPage(driver)
         doc.click_navigation_icon()
         driver.get_screenshot_as_file(
@@ -44,14 +40,14 @@ class GoogleDocs(unittest.TestCase):
         doc.click_on_doc_page()
         driver.get_screenshot_as_file(
             "/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/screenshots/image6.png")
-
         driver.implicitly_wait(10)
 
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
 
-
 if __name__ == '__main__':
     unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(
         output="/Users/priyamvadaanand/PycharmProjects/google_selenium/PageObjectModel/reports"))
+
+

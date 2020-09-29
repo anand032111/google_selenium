@@ -5,5 +5,7 @@
     <orderEntry type="jdk" jdkName="Python 3.8 (Selenium)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="BddPythonProject" />
+    <orderEntry type="module" module-name="PythonSelFramework" />
+    <orderEntry type="module" module-name="pythonpytestProject" />
   </component>
 </module>
